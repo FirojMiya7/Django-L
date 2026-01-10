@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firoj Miya - Portfolio</title>
+    
+    <!-- Bootstrap link --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    
+  </head>
+  <body>
+    {% comment %} <h1 class="text-center mt-3">Welcome to Website</h1> {% endcomment %}
+
+
+
+    <!-- Navbar section part -->
+
+    {% comment %} <nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> {% endcomment %}
+
+
+<!-- Image section part-->
+
+
+
+  {% comment %} <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static "images/cuteCat1.jpg" %}" class="d-block_w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "images/cuteCat2.jpg" %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "images/cuteCat3.jpg" %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> {% endcomment %}
+
+    
+    
+{% comment %}
+    
+    <!-- From Uiverse.io by Smit-Prajapati --> 
+    <div class="container">
+      <div class="heading">Sign In</div>
+      <form action="" class="form">
+        <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
+        <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
+        <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
+        <input class="login-button" type="submit" value="Sign In">
+         
+      </form>
+      <div class="social-account-container">
+        <span class="title">Or Sign in with</span>
+        <div class="social-accounts">
+          <button class="social-button google">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 488 512">
+              <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
+            </svg></button>
+            <button class="social-button apple">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+              </svg>
+            </button>
+            <button class="social-button twitter">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <span class="agreement"><a href="#">Learn user licence agreement</a></span>
+      </div> 
+      {% endcomment %}
+
+
+
+
+
+
+    <!--Portfolio-->
+{% comment %} 
+
+    <header>
+        <nav>
+            <div class="logo">Firoj Miya</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Firoj Miya</span></h1>
+            <p class="subtitle">Full Stack Developer</p>
+            <p class="description">Building elegant solutions with modern technologies</p>
+            <a href="#contact" class="cta-btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate developer focused on creating clean, efficient, and user-friendly applications. With expertise in modern web technologies, I turn ideas into reality.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Backend</h3>
+                    <div class="tech-items">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Tools</h3>
+                    <div class="tech-items">
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">VS Code</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Postman</span>
+                        <span class="tech-tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack online shopping platform with payment integration</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Task Management App</h3>
+                    <p>Collaborative task tracker with real-time updates</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Firebase</span>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive portfolio showcasing creative projects</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Let's work together on your next project</p>
+            <div class="contact-links">
+                <a href="mailto:firojali723@gmail.com" class="contact-btn">Email</a>
+                <a href="https://github.com/firojmiya7" class="contact-btn">GitHub</a>
+                <a href="https://linkedin.com/in/firojmiya" class="contact-btn">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Firoj Miya. All rights reserved.</p>
+    </footer>      
+ {% endcomment %}
+
+
+
+<!--navbar section part-->
+
+<div class="nav">
+    <div class="container-nav">
+        <a class="btn" href="{% url 'show' %}">Home</a>
+        <a class="btn" href="{% url 'form' %}">Contact</a>
+        <a class="btn" href="#">About</a>
+        <a class="btn" href="#">FAQ</a>
+    <svg
+      class="outline"
+      overflow="visible"
+      width="400"
+      height="60"
+      viewBox="0 0 400 60"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        class="rect"
+        pathLength="100"
+        x="0"
+        y="0"
+        width="400"
+        height="60"
+        fill="transparent"
+        stroke-width="5"
+      ></rect>
+    </svg>
+  </div>
+</div>
+
+
+ <!--Bootstrap-->
+
+ <div class="container">
+  <div class="row">
+    {% for i in a %}
+
+    <div class="col-md-4">
+
+      <div class="card mb-4" style="width: 18rem; height: auto;">
+        <img src="{{ i.image.url }}" class="card-img-top" alt="Course 1">         
+        <div class="card-body">
+          <h5 class="card-title">{{ i.title }}</h5>
+          <p class="card-text">{{ i.description }}</p>
+          <a href="#" class="btn btn-primary">Enroll Now - ${{ i.price }}</a>
+        </div>
+
+      </div>
+
+    </div>
+
+      {% endfor %}
+    </div>
+ </div>
+
+
+
+ <div class="container-table">
+  <div class="row-table">
+    <table class="table" style="width: 35rem; height: auto; margin-left: 12rem; margin-top: 3rem;">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">City</th>
+          <th scope="col">State</th>
+        </tr>
+      </thead>
+      <tbody>
+    {% for i in b %}
+    <tr>
+      <th scope="row">{{ i.id }}</th>
+      <td>{{ i.FirstName }}</td>
+      <td>{{ i.LastName }}</td>
+      <td>{{ i.email }}</td>
+      <td>{{ i.city }}</td>
+      <td>{{ i.state }}</td>
+    </tr>
+    {% endfor %}
+    
+  </tbody>
+</table>
+  </div>
+ </div>
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
