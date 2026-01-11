@@ -424,15 +424,58 @@ footer {
 
 /* <!-- Container-Table --> */
 
-.container-table {
+/* .container-table {
   position: relative;
   border: 2px solid #000;
-  width: 60rem;
+  width: 80rem;
   height: auto;
   margin-top: 0.5rem;
+  padding-right: 10rem;
   margin-left: auto;
     margin-right: auto;
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 1rem;
+} */
+
+.edit {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.delete {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.recycle-bin {
+    background-color: #777777; /* Gray */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 8px;
 }

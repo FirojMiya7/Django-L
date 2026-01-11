@@ -325,7 +325,8 @@
 
  <div class="container-table">
   <div class="row-table">
-    <table class="table" style="width: 35rem; height: auto; margin-left: 12rem; margin-top: 3rem;">
+    <table class="table" style="width: 85rem; height: auto; margin-left: 6rem; margin-top: 3rem;">
+      <a href="{% url 'recycle_page' %}" style="display: inline-block; margin-top: 5%; margin-left: 7.5rem; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">RecycleBin-></a>
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -334,17 +335,26 @@
           <th scope="col">Email</th>
           <th scope="col">Password</th>
           <th scope="col">Comments</th>
+          <th scope="col">Action</th>
+          <!-- <th scope="col">RecycleBin</th> -->
         </tr>
       </thead>
       <tbody>
     {% for i in b %}
     <tr>
-      <th scope="row">{{ i.id }}</th>
+      <th scope="row">{{ forloop.counter }}</th>
       <td>{{ i.FirstName }}</td>
       <td>{{ i.LastName }}</td>
       <td>{{ i.email }}</td>
       <td>{{ i.password }}</td>
       <td>{{ i.comments }}</td>
+      <td>
+        <button class="edit">Edit</button>
+        <a href="{% url 'delete_data' i.id %}"><button class="delete">Delete</button></a>
+      </td>
+      <!-- <td>
+        <a href="{% url 'recycle' i.id %}"><button class="recycle-bin">Recycle</button></a>
+      </td> -->
     </tr>
     {% endfor %}
     

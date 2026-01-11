@@ -11,6 +11,7 @@ from .models import Course, Customer
 def home(request):
     course_data = Course.objects.all()
     customer_data = Customer.objects.all()
+    customer_data = Customer.objects.filter(is_deleted=False)
     return render(request, 'home.html', {'a': course_data, 'b': customer_data})                     #render le templates ko file laii browser samma load garne kaam ho
     
 #object ko name a deko ho here
@@ -34,3 +35,30 @@ def form(request):
         )
         return redirect('form')  # Redirect to home page after successful submission
     return render(request, 'register.html')
+
+#yo chaii permanent or hard delete function ho
+
+# def delete_data(request, id):
+#     customer = Customer.objects.get(id=id)
+#     customer.delete()
+#     return redirect('show')
+
+# yo chaii soft delete function ho
+
+def delete_data(request, id):
+    customer = Customer.objects.get(id=id)
+    customer.is_deleted = True
+    customer.save()
+    return redirect('show')
+
+
+def recycle(request, id):
+    customer = Customer.objects.get(id=id)
+    customer.is_deleted = False
+    customer.save()
+    return redirect('recycle_page')
+
+
+def recycle_page(request):
+    deleted_customers = Customer.objects.filter(is_deleted=True)
+    return render(request, 'recycle.html', {'deleted_data': deleted_customers})
